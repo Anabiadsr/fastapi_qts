@@ -3,7 +3,7 @@ import pytest
 from app.faturamento.cobranca import processar_cobranca
 
 @pytest.mark.parametrize(
-    "valor_base, plano, dias_atraso, resultado_esperado",
+    "valor_base, plano, dias_atraso,resultado_esperado",
     [
     
         (0.0, "BASICO", 0, -1.0),
