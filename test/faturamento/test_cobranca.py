@@ -19,8 +19,8 @@ from app.faturamento.cobranca import processar_cobranca
 
         (100.0, "BASICO", 10, 110.0),     
         (100.0, "PREMIUM", 10, 99.5),      
-        (100.0, "BASICO", 40, 165.0),   
-        (100.0, "EMPRESARIAL", 40, 137.0) 
+        (100.0, "BASICO", 45, 170.0),   
+        (100.0, "EMPRESARIAL", 35, 133.0) 
     ]
 )
 def test_processar_cobranca_funcional(valor_base, plano, dias_atraso, resultado_esperado):
