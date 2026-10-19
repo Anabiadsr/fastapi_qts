@@ -7,6 +7,8 @@ from app.faturamento.cobranca import processar_cobranca
     [
     
         (0.0, "BASICO", 0, -1.0),
+         (0.0, "BASICO", 0, -1.0),
+        (-50.0, "PREMIUM", 0, -1.0),
         (100.0, " ", 0, -2.0),
         (100.0, "BASICO", 0, 100.0),
         (-50.0, "PREMIUM", 0, -1.0),
@@ -31,4 +33,4 @@ def test_desempenho_processar_cobranca():
     processar_cobranca(100.0, "PREMIUM", 15)
     duracao = time.perf_counter() - inicio
 
-    assert duracao < 0.1
+    assert duracao <  0.1
